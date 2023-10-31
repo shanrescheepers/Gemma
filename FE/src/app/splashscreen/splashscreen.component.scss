@@ -1,0 +1,46 @@
+.main-splash-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+    height: 50vh;
+    margin-top: 10%;
+
+    &__gemma-icon-div {
+        display: grid;
+
+        &__gemma-icon {
+            display: grid;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    &__gemma-logo-div {
+        display: grid;
+        place-items: center;
+
+        &__gemma-logo {
+            display: grid;
+            width: 30%;
+            height: auto;
+
+        }
+    }
+
+    &__gemma-text-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        height: 50%;
+        width: 50%;
+
+        &__text1 {
+            display: grid;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+}
