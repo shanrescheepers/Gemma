@@ -1,1 +1,23 @@
-<p>gemma-live-studio works!</p>
+<div class="gemma-live-studio-div">
+
+    <div id="liveView" class="gemma-live-studio-div__live-view">
+
+        <button id="webcamButton" #webcamButton>
+            <span (click)="enableCam($event)">ENABLE WEBCAM</span>
+        </button>
+
+        <div>
+            <p id="gesture_output" #gestureOutput class="output"></p>
+        </div>
+
+        <div style="position: relative;">
+            <!-- output of vid -->
+            <video id="webcam" #webcam style="position: absolute;" autoplay playsInline (loadeddata)="predictWebcam()">
+
+            </video>
+            <!-- canvas -->
+            <canvas class="output_canvas" id="output_canvas" #outputcanvas style="position: absolute;margin: 0;">
+            </canvas>
+        </div>
+    </div>
+</div>
