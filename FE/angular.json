@@ -17,9 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "long"
-            ],
             "outputPath": "dist/gemma",
             "index": "src/index.html",
             "main": "src/main.ts",

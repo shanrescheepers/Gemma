@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { asNativeElements } from '@angular/core';
 import {
   HandLandmarker,
   FilesetResolver,
@@ -58,14 +57,13 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       baseUrl: './assets/guitar-acoustic/',
     }).toDestination();
 
-
     Tone.Buffer.loaded().then(() => {
       this.bufferLoaded = true;
       console.info('Buffer Loaded');
     });
 
 
-    // If webcam supported, add event listener to button for when user wants to activate it/Clicks accept preference.
+    // Iff webcam supported, add event listener to button for when user wants to activate it/Clicks accept preference.
     if (!this.hasGetUserMedia()) {
       console.warn('getUserMedia() is not supported by your cuurent browser');
     }
