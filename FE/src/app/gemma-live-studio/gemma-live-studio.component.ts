@@ -5,6 +5,7 @@ import {
   DrawingUtils,
   GestureRecognizer,
 } from '@mediapipe/tasks-vision';
+import { promises } from 'dns';
 import * as Tone from 'tone';
 
 @Component({
@@ -23,7 +24,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
   detectionResults = undefined;
   gestureResults = undefined;
 
-  handLandmarker;
+  handLandmarker: any;
   runningMode: any = 'VIDEO';
   webcamRunning: Boolean = false;
 
@@ -39,8 +40,9 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
   currentGestures;
 
-
-  ngAfterViewInit(): void {
+  //<> type def. to return type/ value later after async loaded, promising to fill with value/type
+  //js promises
+  async ngAfterViewInit(): Promise<void> {
     // show webcam canvas after succ load
     this.canvasCtx = this.canvasElement.nativeElement.getContext('2d');
     this.drawingUtils = new DrawingUtils(this.canvasCtx);
@@ -67,8 +69,8 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     if (!this.hasGetUserMedia()) {
       console.warn('getUserMedia() is not supported by your cuurent browser');
     }
-    this.createHandLandmarker();
-    this.createGestureRecognizer();
+    await this.createHandLandmarker();
+    await this.createGestureRecognizer();
   }
   // my favorite : ?
   hasGetUserMedia = () => !!navigator.mediaDevices?.getUserMedia;
@@ -80,6 +82,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
       'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm'
     );
+
     this.handLandmarker = await HandLandmarker.createFromOptions(vision, {
       baseOptions: {
         modelAssetPath: `./assets/hand_landmarker.task`,
@@ -87,7 +90,8 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       },
       runningMode: this.runningMode,
       numHands: 2,
-    });
+    }).then(x => { console.log(x); return x });
+    ;
   };
 
 
@@ -102,17 +106,17 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
         delegate: 'GPU',
       },
       runningMode: this.runningMode,
-    });
+    }).then(x => { console.log(x); return x });
   };
 
   // Enable the live webcam view and start detection.
   enableCam(event) {
-    if (this.handLandmarker) {
+    if (!this.handLandmarker) {
       alert('Wait! objectDetector not loaded yet. wait');
       return;
     }
 
-    if (this.gestureRecognizer) {
+    if (!this.gestureRecognizer) {
       alert('Please wait for gestureRecognizer to load');
       return;
     }

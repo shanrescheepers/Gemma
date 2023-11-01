@@ -1,0 +1,89 @@
+.main-div {
+
+    &__bordered-block {
+        display: grid;
+
+        width: 93%;
+        height: 84%;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        z-index: 9999;
+
+        &__contents {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 1fr;
+
+            &__left {
+                background-color: aqua;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                display: grid;
+                grid-template-rows: 120px 200px 200px 200px;
+                height: 95%;
+                justify-items: center;
+
+                &__t1 {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    grid-template-rows: 1fr;
+                    padding: 6px;
+
+                    &__img1 {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    &__h4 {
+                        padding-left: 10px;
+                        font-family: "Inter", sans-serif;
+                    }
+                }
+
+                &__t2 {
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    &__img2 {}
+                }
+
+                &__t3 {
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    &__img3 {}
+                }
+
+                &__image {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    align-items: center;
+                    justify-self: left;
+                    margin-left: 16px;
+                    gap: 16px;
+
+                    &__image1 {
+                        height: 120px;
+                        width: 130px;
+
+                    }
+
+
+                }
+            }
+
+            &__right {
+                background-color: rgb(78, 97, 97);
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                height: 95%;
+            }
+        }
+    }
+}

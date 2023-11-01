@@ -1,0 +1,16 @@
+.main-div {
+
+    &__bordered-block {
+        display: grid;
+
+        width: 93%;
+        height: 84%;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        z-index: 9999;
+    }
+}
