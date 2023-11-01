@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { asNativeElements } from '@angular/core';
 import {
   HandLandmarker,
   FilesetResolver,
@@ -108,12 +109,12 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
   // Enable the live webcam view and start detection.
   enableCam(event) {
-    if (!this.handLandmarker) {
+    if (this.handLandmarker) {
       alert('Wait! objectDetector not loaded yet. wait');
       return;
     }
 
-    if (!this.gestureRecognizer) {
+    if (this.gestureRecognizer) {
       alert('Please wait for gestureRecognizer to load');
       return;
     }
