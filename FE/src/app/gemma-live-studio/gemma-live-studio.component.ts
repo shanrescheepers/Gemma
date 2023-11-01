@@ -90,6 +90,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       },
       runningMode: this.runningMode,
       numHands: 2,
+
     }).then(x => { console.log(x); return x });
     ;
   };
@@ -131,6 +132,8 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     // getUsermedia parameters.
     const constraints = {
       video: true,
+      // facingMode: 'user',
+
     };
 
     // Activate the webcam stream.
@@ -154,6 +157,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     if (this.runningMode === 'IMAGE') {
       this.runningMode = 'VIDEO';
       await this.handLandmarker.setOptions({ runningMode: 'VIDEO' });
+
     }
 
     let startTimeMs = performance.now();

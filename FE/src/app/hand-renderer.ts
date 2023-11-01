@@ -1,4 +1,4 @@
-// fingy gesture array
+
 const fingerLookupIndices = {
     thumb: [0, 1, 2, 3, 4],
     indexFinger: [0, 5, 6, 7, 8],

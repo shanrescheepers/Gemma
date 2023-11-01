@@ -53,8 +53,26 @@
                     color: #ffff;
                 }
 
+
             }
 
+
+        }
+
+        &__mid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            &__gesture-output {
+                display: grid;
+                margin-left: 20px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 40px 40px 40px;
+
+                &__output {
+                    font-family: "Inter", sans-serif;
+                }
+            }
         }
 
 
@@ -65,7 +83,7 @@
 
             &__soundwave1 {
                 justify-content: left;
-                transform: translate(18%, 8%);
+                transform: translate(18%, 2%);
                 justify-items: center;
                 align-content: center;
 
@@ -81,7 +99,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 left: 50%;
-                transform: translate(-50%, 1%);
+                transform: translate(-50%, -15%);
                 z-index: 9999;
                 width: 700px;
                 height: 500px;
@@ -90,9 +108,19 @@
                 align-items: center;
 
                 &__gesture-output {
+
+
                     display: grid;
                     grid-template-columns: 200px 200px 200px;
                     grid-template-columns: 1fr;
+
+                    &__output {
+
+                        // bottom: -30%;
+                        display: grid;
+                        grid-template-rows: 1;
+                        grid-template-columns: 200px 200px 200px;
+                    }
                 }
 
                 &__videooutput {
@@ -108,7 +136,7 @@
 
             &__soundwave2 {
                 justify-content: left;
-                transform: translate(106%, 8%);
+                transform: translate(106%, 2%);
                 justify-items: center;
                 align-content: center;
 

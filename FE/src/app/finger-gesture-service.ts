@@ -62,6 +62,7 @@ export class HandGesture {
 
                 context.translate(canvas.width, 0);
                 context.scale(-1, 1);
+
                 const runDetection = () => {
                     model.estimateHands(video).then((predictions) => {
                         // Render
