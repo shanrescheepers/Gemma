@@ -1,0 +1,122 @@
+.main-div {
+
+    &__bordered-block {
+        display: grid;
+
+        width: 93%;
+        height: 84%;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        z-index: 9999;
+
+        &__top {
+            height: 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin-top: 10px;
+
+            &__heading {
+                white-space: nowrap;
+
+                text-overflow: ellipsis;
+                text-align: left;
+                color: white;
+                font-weight: bold;
+                font-size: 28px;
+                text-align: center;
+                letter-spacing: 0.5px;
+                font-family: "Inter", sans-serif;
+            }
+
+            &__button {
+                // border: 2px #E444C9;
+                // border-radius: 20px;
+                border-radius: 25px;
+                border: 2px solid #6424EB;
+                background-color: transparent;
+                margin-top: 20px;
+                margin-left: 20px;
+                justify-content: left;
+                width: 155px;
+                height: 35px;
+                font-family: "Inter", sans-serif;
+                color: #1F2430;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #6424EB;
+                    color: #ffff;
+                }
+
+            }
+
+        }
+
+
+        &__webcam {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr;
+
+            &__soundwave1 {
+                justify-content: left;
+                transform: translate(18%, 8%);
+                justify-items: center;
+                align-content: center;
+
+                &__png {
+                    height: 20%;
+                }
+            }
+
+            &__liveview {
+                border-radius: 25px;
+                background-color: rgba(255, 255, 255, 0.5);
+                position: fixed;
+                display: grid;
+                grid-template-columns: 1fr;
+                left: 50%;
+                transform: translate(-50%, 1%);
+                z-index: 9999;
+                width: 700px;
+                height: 500px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+
+                &__gesture-output {
+                    display: grid;
+                    grid-template-columns: 200px 200px 200px;
+                    grid-template-columns: 1fr;
+                }
+
+                &__videooutput {
+                    border-radius: 25px;
+                    display: grid;
+                    position: fixed;
+                    grid-template-columns: 1fr;
+                    justify-content: center;
+                    left: 5%;
+                }
+            }
+
+
+            &__soundwave2 {
+                justify-content: left;
+                transform: translate(106%, 8%);
+                justify-items: center;
+                align-content: center;
+
+
+                &__png2 {
+                    height: 20%;
+                }
+            }
+        }
+    }
+}

@@ -1,20 +1,43 @@
-<div id="liveView">
+<div class="main-div">
+    <div class="main-div__bordered-block">
+        <div class="main-div__bordered-block__top">
+            <button id="webcamButton" #webcamButton class="main-div__bordered-block__top__button">
+                <span (click)="enableCam($event)" class="main-div__bordered-block__top__button__text">ENABLE
+                    WEBCAM</span>
+            </button>
+            <h1 class="main-div__bordered-block__top__heading">TURN UP YOUR VOLUME & HAVE FUN!</h1>
 
-    <button id="webcamButton" #webcamButton>
-        <span (click)="enableCam($event)">ENABLE WEBCAM</span>
-    </button>
+        </div>
 
-    <div>
-        <p id="gesture_output" #gestureOutput class="output"></p>
-    </div>
 
-    <div>
-        <!-- output of vid -->
-        <video id="webcam" #webcam style="position: absolute;" autoplay playsInline (loadeddata)="predictWebcam()">
+        <div class="main-div__bordered-block__webcam">
+            <div class="main-div__bordered-block__webcam__soundwave1">
+                <img src="../../assets/images/soundwave-left.png" alt="soundwave1"
+                    class="main-div__bordered-block__webcam__soundwave1__png">
+            </div>
 
-        </video>
-        <!-- canvas -->
-        <canvas class="output_canvas" id="output_canvas" #outputcanvas style="position: absolute;margin: 0;">
-        </canvas>
+            <div id="liveView" class="main-div__bordered-block__webcam__liveview">
+
+                <div class="main-div__bordered-block__webcam__liveview__videooutput">
+                    <video id="webcam" #webcam autoplay playsInline (loadeddata)="predictWebcam()"
+                        style="border-radius: 25px;">
+                    </video>
+
+                    <canvas class="output_canvas" id="output_canvas" #outputcanvas
+                        style="position: absolute;margin-left: 100;">
+                    </canvas>
+                </div>
+
+                <div class="main-div__bordered-block__webcam__liveview__gesture-output">
+                    <p id="gesture_output" #gestureOutput class="output"></p>
+                </div>
+            </div>
+
+            <div class="main-div__bordered-block__webcam__soundwave2">
+                <img src="../../assets/images/soundwave-right.png" alt="soundwave2"
+                    class="main-div__bordered-block__webcam__soundwave2__png2">
+            </div>
+        </div>
+
     </div>
 </div>

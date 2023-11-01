@@ -1,5 +1,11 @@
 <div>
+    <nav [class.hide-nav]="isHiddenRoute()">
+        <ul class="nav-grid">
 
-
+            <li class="nav-item"><a routerLink="/helphub">Help Hub</a></li>
+            <li class="nav-item"><a routerLink="/gappinglibrary">Gesture Sound Library</a></li>
+            <li class="nav-item"><a routerLink="/gemmastudio">Gesture Sound Library</a></li>
+        </ul>
+    </nav>
 </div>
 <router-outlet></router-outlet>
