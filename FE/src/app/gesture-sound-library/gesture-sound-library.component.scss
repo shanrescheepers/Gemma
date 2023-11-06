@@ -6,7 +6,7 @@
         width: 93%;
         height: 84%;
         border-radius: 25px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.704);
         position: fixed;
         top: 52%;
         left: 50%;
@@ -19,20 +19,21 @@
             grid-template-rows: 1fr;
 
             &__left {
-                background-color: aqua;
+                // background-color: aqua;
                 border-top-left-radius: 25px;
                 border-bottom-left-radius: 25px;
+                margin-left: 20px;
                 display: grid;
-                grid-template-rows: 120px 200px 200px 200px;
+                margin-top: 20px;
+                width: 200px;
+                grid-template-rows: 120px 120px 120px;
                 height: 95%;
                 justify-items: center;
+                justify-content: center;
 
                 &__t1 {
                     display: grid;
                     grid-template-columns: auto auto;
-                    align-items: center;
-                    grid-template-rows: 1fr;
-                    padding: 6px;
 
                     &__img1 {
                         height: 30px;
@@ -49,14 +50,30 @@
                     display: grid;
                     grid-template-columns: auto auto;
 
-                    &__img2 {}
+                    &__img2 {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    &__h4 {
+                        padding-left: 10px;
+                        font-family: "Inter", sans-serif;
+                    }
                 }
 
                 &__t3 {
                     display: grid;
                     grid-template-columns: auto auto;
 
-                    &__img3 {}
+                    &__img3 {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    &__h4 {
+                        padding-left: 10px;
+                        font-family: "Inter", sans-serif;
+                    }
                 }
 
                 &__image {
@@ -79,7 +96,7 @@
             }
 
             &__right {
-                background-color: rgb(78, 97, 97);
+                // background-color: rgb(78, 97, 97);
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
                 height: 95%;

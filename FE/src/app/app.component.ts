@@ -1,34 +1,25 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
-  template: `
-<div>
-
-    <nav [class.hide-nav]="isHiddenRoute()" class="nav">
-        <div class="nav-item-logo-div">
-            <img src="../assets/images/gemma-logo-icon.png" alt="Logo" class="nav-item-logo">
-        </div>
-        <div class="nav-grid">
-            
-          
-            <button class="nav-item"><a routerLink="/mappinglibrary" class="nav-link">Gesture Library</a></button>
-            <button class="nav-item"><a routerLink="/gemmastudio" class="nav-link">Gemma Studio</a></button>
-              <button class="nav-item"><a routerLink="/helphub" class="nav-link">Help Hub</a></button>
-        </div>
-    </nav>
-</div>
-  <router-outlet></router-outlet>
-`,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private router: Router) { }
+  currentUrl: string;
+
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.currentUrl = event.urlAfterRedirects;
+    });
+  }
 
   isHiddenRoute(): boolean {
     const hiddenRoutes = ['/splash', '/ob1', '/ob2'];
-    const visibleRoutes = ['/mappinglibrary', '/gemmastudio', '/helphub'];
-    return !visibleRoutes.includes(this.router.url);
+    return hiddenRoutes.includes(this.currentUrl);
   }
 }

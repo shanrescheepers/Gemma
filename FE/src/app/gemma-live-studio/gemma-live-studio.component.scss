@@ -13,6 +13,21 @@
         transform: translate(-50%, -47%);
         z-index: 9999;
 
+        @media (max-width: 1200px) {
+            width: 95%;
+            height: 90%;
+        }
+
+        @media (max-width: 992px) {
+            width: 97%;
+            height: 92%;
+        }
+
+        @media (max-width: 768px) {
+            width: 99%;
+            height: 94%;
+        }
+
         &__top {
             height: 10%;
             display: grid;
@@ -87,6 +102,24 @@
                 justify-items: center;
                 align-content: center;
 
+                // Laptop Screen
+                @media (min-width: 1440px) {
+                    margin-right: 0%;
+                    margin-left: 22%;
+                    margin-top: 12%;
+                    width: 60%;
+                    height: 70%;
+                }
+
+                // Standard Desktop Screen
+                @media (min-width: 1680px) {
+                    margin-right: 0%;
+                    margin-left: 7%;
+                    margin-top: 15%;
+                    width: 60%;
+                    height: 80%;
+                }
+
                 &__png {
                     height: 20%;
                 }
@@ -106,6 +139,25 @@
                 padding: 10px;
                 justify-content: center;
                 align-items: center;
+
+                @media (max-width: 1440px) {
+                    width: 50%;
+                    height: 75%;
+                    justify-content: center;
+                    justify-self: center;
+                    justify-items: center;
+
+                }
+
+                @media (min-width: 1680px) {
+                    width: 60%;
+                    height: 80%;
+                }
+
+                @media (max-width: 768px) {
+                    width: 95%;
+                    height: 95%;
+                }
 
                 &__gesture-output {
 
@@ -140,6 +192,21 @@
                 justify-items: center;
                 align-content: center;
 
+                // Laptop Screen
+                @media (min-width: 1440px) {
+
+                    margin-left: 45%;
+                    margin-top: 12%;
+                    width: 60%;
+                    height: 70%;
+                }
+
+                @media (min-width: 1680px) {
+                    margin-left: 60%;
+                    margin-top: 15%;
+                    width: 60%;
+                    height: 80%;
+                }
 
                 &__png2 {
                     height: 20%;

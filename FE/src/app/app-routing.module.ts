@@ -9,15 +9,13 @@ import { GemmaLiveStudioComponent } from './gemma-live-studio/gemma-live-studio.
 
 // const routes: Routes = [];
 const routes: Routes = [
-  // Setting 'splash/splaschreen' as the initial route.
   { path: '', redirectTo: 'splash', pathMatch: 'full' },
-  { path: '', component: SplashComponent },
+  { path: 'splash', component: SplashComponent },
   { path: 'ob1', component: Onboarding1Component },
   { path: 'ob2', component: Onboarding2Component },
   { path: 'mappinglibrary', component: GestureSoundLibraryComponent },
   { path: 'gemmastudio', component: GemmaLiveStudioComponent },
   { path: 'helphub', component: HelpHubComponent },
-
 ];
 
 @NgModule({
