@@ -1,4 +1,13 @@
 .main-div {
+    .overlay {
+
+
+
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(1px);
+
+        /* This should be less than the z-index of your element */
+    }
 
     &__bordered-block {
         display: grid;
@@ -6,7 +15,9 @@
         width: 93%;
         height: 84%;
         border-radius: 25px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(116, 79, 149, 0.6);
+        backdrop-filter: blur(30px);
+        z-index: 9998;
         position: fixed;
         top: 52%;
         left: 50%;

@@ -32,8 +32,9 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
   gestureRecognizer: GestureRecognizer;
 
-  videoHeight = '360px';
-  videoWidth = '480px';
+  videoHeight = '300px';
+  videoWidth = '400px';
+
 
   synth;
   bufferLoaded = false;
@@ -127,7 +128,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       this.enableWebcamButton.nativeElement.innerText = 'ENABLE PREDICTIONS';
     } else {
       this.webcamRunning = true;
-      this.enableWebcamButton.nativeElement.innerText = 'DISABLE PREDICTIONS';
+      this.enableWebcamButton.nativeElement.innerText = 'Camera Running';
     }
     // getUsermedia parameters.
     const constraints = {
@@ -152,6 +153,8 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       this.video.nativeElement.videoWidth;
     this.canvasElement.nativeElement.height =
       this.video.nativeElement.videoHeight;
+    this.canvasElement.nativeElement.scaleX =
+      this.canvasElement.nativeElement.videoScale;
 
     // Now let's start detecting the stream.
     if (this.runningMode === 'IMAGE') {
@@ -179,7 +182,8 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       0,
       0,
       this.canvasElement.nativeElement.width,
-      this.canvasElement.nativeElement.height
+      this.canvasElement.nativeElement.height,
+      // this.canvasElement.nativeElement.videoHeight(-1, 1)
     );
 
     // Landmarks and keyoints

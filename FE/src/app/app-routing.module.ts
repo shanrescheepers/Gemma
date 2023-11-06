@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'splash', component: SplashComponent },
   { path: 'ob1', component: Onboarding1Component },
   { path: 'ob2', component: Onboarding2Component },
-  { path: 'mappinglibrary', component: GestureSoundLibraryComponent },
-  { path: 'gemmastudio', component: GemmaLiveStudioComponent },
+  { path: 'sound-gesture', component: GestureSoundLibraryComponent },
+  { path: 'liveplay', component: GemmaLiveStudioComponent },
   { path: 'helphub', component: HelpHubComponent },
 ];
 
