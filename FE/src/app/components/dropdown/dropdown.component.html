@@ -1,10 +1,10 @@
 <div class="select-main">
     <mat-form-field appearance="outline" class="rounded-select">
-        <mat-label class="select">Select</mat-label>
+        <mat-label class="select" style="font-size: 14px; margin-top: -8px !important;">Select Sound</mat-label>
 
-        <mat-select>
-            <mat-option>None</mat-option>
-            <mat-option *ngFor="let state of states" [value]="state" class="option">{{state}}</mat-option>
+        <mat-select [(ngModel)]="selectedMP3" (selectionChange)="onSelectionChange()">
+            <mat-option value="none">None</mat-option>
+            <mat-option *ngFor="let mp3 of mp3List" [value]="mp3">{{ mp3 }}</mat-option>
         </mat-select>
     </mat-form-field>
 </div>

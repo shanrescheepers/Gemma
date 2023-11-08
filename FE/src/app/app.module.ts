@@ -11,7 +11,7 @@ import { GemmaLiveStudioComponent } from './gemma-live-studio/gemma-live-studio.
 import { HelpHubComponent } from './help-hub/help-hub.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { MaterialModule } from './material/material/material.module';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { MaterialModule } from './material/material/material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    DropdownComponent
+    DropdownComponent,
+    HttpClientModule, // Add HttpClientModule to imports
   ],
   providers: [],
   bootstrap: [AppComponent]
