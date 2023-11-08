@@ -51,9 +51,56 @@
 
 
             &__left-div {
-                padding-top: 50px;
+                padding-top: 75px;
                 display: grid;
-                grid-template-columns: 180px 145px 65px 100px;
+                grid-template-columns: 180px 145px 65px;
+
+                gap: 8px;
+                justify-content: center;
+                justify-self: center;
+                justify-items: start;
+                align-items: center;
+                row-gap: 40px;
+                height: 90px;
+
+                &__dropdown {
+                    display: grid;
+                    margin-top: -25px;
+                    justify-content: center;
+                    justify-self: center;
+                    justify-items: start;
+
+                }
+
+                &__fingy1 {
+                    display: grid;
+                    height: 80px;
+                    justify-content: start;
+                    justify-items: center;
+                    align-items: start;
+                    width: auto;
+                }
+
+                &__playbutton {
+                    display: grid;
+                    height: 50px;
+                    width: 50px;
+                    border: 0px;
+                    border-radius: 100px !important;
+                    color: #000000;
+                    background: linear-gradient(to bottom, #E748B7, #2DE1F2);
+                    justify-content: center;
+                    justify-self: center;
+                    justify-items: start;
+                    align-items: center;
+                }
+
+            }
+
+            &__right-div {
+                padding-top: 75px;
+                display: grid;
+                grid-template-columns: 180px 145px 65px;
 
                 gap: 8px;
                 justify-content: center;
@@ -93,64 +140,7 @@
                     align-items: center;
                 }
 
-                &__savebutton {
-                    display: grid;
-                    height: 50px;
-                    width: 70px;
-                    border-radius: 100px !important;
-                    background-color: #C560FF;
-                    justify-content: center;
-                    justify-self: center;
-                    justify-items: start;
-                    align-items: center;
-                }
-            }
 
-            &__right-div {
-                padding-top: 30px;
-                display: grid;
-                grid-template-columns: 180px 145px 65px 100px;
-
-                gap: 8px;
-                justify-content: center;
-                justify-self: center;
-                justify-items: start;
-                align-items: center;
-                row-gap: 15px;
-                height: 90px;
-
-                &__fingy1 {
-                    display: grid;
-                    height: 80px;
-                    justify-content: start;
-                    justify-items: center;
-                    align-items: start;
-                    width: auto;
-                }
-
-                &__playbutton {
-                    display: grid;
-                    height: 50px;
-                    width: 50px;
-                    border-radius: 100px !important;
-                    background-color: #453364;
-                    justify-content: center;
-                    justify-self: center;
-                    justify-items: start;
-                    align-items: center;
-                }
-
-                &__savebutton {
-                    display: grid;
-                    height: 50px;
-                    width: 70px;
-                    border-radius: 100px !important;
-                    background-color: #C560FF;
-                    justify-content: center;
-                    justify-self: center;
-                    justify-items: start;
-                    align-items: center;
-                }
             }
         }
 

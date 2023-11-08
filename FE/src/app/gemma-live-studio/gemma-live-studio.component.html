@@ -8,7 +8,7 @@
             </button>
 
 
-            <h1 class="main-div__bordered-block__top__heading">TURN UP YOUR VOLUME & HAVE FUN!</h1>
+            <h1 class="main-div__bordered-block__top__heading">Turn up the volume & have fun making your music</h1>
 
         </div>
 
@@ -32,7 +32,7 @@
 
                 <div class="main-div__bordered-block__webcam__liveview__videooutput">
                     <video id="webcam" #webcam autoplay playsInline (loadeddata)="predictWebcam()"
-                        style="border-radius: 25px;">
+                        style="border-radius: 25px;" [class.flipped-video]="webcamRunning">
                     </video>
 
                     <canvas class="output_canvas" id="output_canvas" #output_canvas

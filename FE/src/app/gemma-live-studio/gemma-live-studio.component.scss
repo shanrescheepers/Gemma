@@ -1,11 +1,13 @@
 .main-div {
     .overlay {
 
+        background: rgba(30, 24, 36, 0.5);
 
-
-        background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(1px);
-        background: linear-gradient(to right, #4c2165, #3A2C6A, #1b172a);
+
+        // background: rgba(0, 0, 0, 0.3);
+        // backdrop-filter: blur(1px);
+        // background: linear-gradient(to right, #4c2165, #3A2C6A, #1b172a);
         /* This should be less than the z-index of your element */
     }
 
@@ -48,7 +50,7 @@
 
             &__heading {
                 white-space: nowrap;
-
+                margin-top: 20px;
                 text-overflow: ellipsis;
                 text-align: left;
                 background: linear-gradient(to right, #00C1FF, #e25c8f, #F4A85A);
@@ -92,6 +94,7 @@
         &__mid {
             display: grid;
             grid-template-columns: 1fr;
+            margin-top: -30px;
 
             &__gesture-output {
                 display: grid;
@@ -202,6 +205,8 @@
                     grid-template-columns: 1fr;
                     justify-content: center;
                     left: 5%;
+
+
                 }
             }
 
@@ -234,4 +239,12 @@
             }
         }
     }
+}
+
+.flipped-video {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    /* For some older browsers */
+    transform-origin: center;
+    -webkit-transform-origin: center;
 }

@@ -161,14 +161,16 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
   async predictWebcam() {
     this.canvasElement.nativeElement.style.width =
       this.video.nativeElement.videoWidth.toString();
+
     this.canvasElement.nativeElement.style.height =
       this.video.nativeElement.videoHeight.toString();
+
     this.canvasElement.nativeElement.width =
       this.video.nativeElement.videoWidth;
     this.canvasElement.nativeElement.height =
       this.video.nativeElement.videoHeight;
 
-    // Now let's start detecting the stream.
+    // Detecting the stream.
     if (this.runningMode === 'IMAGE') {
       this.runningMode = 'VIDEO';
       await this.handLandmarker.setOptions({ runningMode: 'VIDEO' });
@@ -206,8 +208,9 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
           GestureRecognizer.HAND_CONNECTIONS,
           {
-            color: '#7627EC',
+            color: '#BE3F71',
             lineWidth: 2,
+
           }
         );
         this.drawingUtils.drawLandmarks(landmarks, {
