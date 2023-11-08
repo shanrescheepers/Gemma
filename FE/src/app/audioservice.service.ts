@@ -14,12 +14,21 @@ export class AudioserviceService {
     // To fetch the list of MP3 files from an assets folder, use HttpClient
     return this.http.get<string[]>('assets/mp3-list.json');
   }
-
-  setSelectedMP3(mp3FileName: string) {
-    localStorage.setItem('selectedMP3', mp3FileName);
+  // specify index, waar verander
+  setSelectedMP3(mp3FileName: string, index: number) {
+    let x: any = JSON.parse(localStorage.getItem('selectedMP3'));
+    if (!x) {
+      x = ['None', 'None', 'None', 'None', 'None'];
+    }
+    x[index] = mp3FileName;
+    localStorage.setItem('selectedMP3', JSON.stringify(x));
   }
 
-  getSelectedMP3() {
-    return localStorage.getItem('selectedMP3');
+  getSelectedMP3(index: number) {
+    let x: any = JSON.parse(localStorage.getItem('selectedMP3'));
+    if (!x) {
+      x = ['None', 'None', 'None', 'None', 'None'];
+    }
+    return x[index];
   }
 }

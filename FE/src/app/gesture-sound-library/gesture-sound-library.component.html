@@ -7,38 +7,48 @@
 
                 <!-- LEFT DIV -->
                 <div class="main-div__bordered-block__gesturecomponents__left-div">
-                    <!-- Right Div Row 1 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown">
+                    <!-- left Div Row 1 -->
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown"
+                        (x)="log($event, 0)" [index]="0">
+                    </app-dropdown>
+
+                    <img src="../assets/images/fingy1_img.png" alt="quad_fingy_img"
+                        class="main-div__bordered-block__gesturecomponents__left-div__fingy1">
+                    <mat-button-toggle mat-list-icon="fa fa-play"
+                        class="main-div__bordered-block__gesturecomponents__left-div__playbutton"
+                        (click)=" togglePlayState(0)">
+                        Play
+                    </mat-button-toggle>
+                    <mat-button-toggle
+                        class="main-div__bordered-block__gesturecomponents__left-div__savebutton">1Save</mat-button-toggle>
+
+                    <!-- Right Div Row 2 -->
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown"
+                        (x)="log($event, 1)" [index]="1">
                     </app-dropdown>
                     <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
                         class="main-div__bordered-block__gesturecomponents__left-div__fingy1">
                     <mat-button-toggle mat-list-icon="fa fa-play"
                         class="main-div__bordered-block__gesturecomponents__left-div__playbutton"
-                        (click)="togglePlayState()">
-                        {{ playButtonText }} <!-- Display dynamic button text -->
+                        (click)=" togglePlayState(1)">
+                        Play
                     </mat-button-toggle>
-                    <mat-button-toggle class="
-                        main-div__bordered-block__gesturecomponents__left-div__savebutton">1Save</mat-button-toggle>
-
-                    <!-- Right Div Row 2 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown">
-                    </app-dropdown>
-                    <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
-                        class="main-div__bordered-block__gesturecomponents__left-div__fingy1">
-                    <mat-button-toggle mat-list-icon="fa fa-play"
-                        class="main-div__bordered-block__gesturecomponents__left-div__playbutton">Play</mat-button-toggle>
                     <mat-button-toggle
-                        class="main-div__bordered-block__gesturecomponents__left-div__savebutton">1Save</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__left-div__savebutton">Save</mat-button-toggle>
 
                     <!-- Right Div Row 3 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown">
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__left-div__dropdown"
+                        (x)="log($event, 2)" [index]="2">
                     </app-dropdown>
                     <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
                         class="main-div__bordered-block__gesturecomponents__left-div__fingy1">
                     <mat-button-toggle mat-list-icon="fa fa-play"
-                        class="main-div__bordered-block__gesturecomponents__left-div__playbutton">Play</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__left-div__playbutton"
+                        (click)=" togglePlayState(2)">
+
+                        Play</mat-button-toggle>
                     <mat-button-toggle
-                        class="main-div__bordered-block__gesturecomponents__left-div__savebutton">1Save</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__left-div__savebutton">Save</mat-button-toggle>
                 </div>
 
 
@@ -46,32 +56,39 @@
                 <div class="main-div__bordered-block__gesturecomponents__right-div">
 
                     <!-- Right Div Row 1 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown">
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown"
+                        (x)="log($event, 3)" [index]="3">
                     </app-dropdown>
                     <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
                         class="main-div__bordered-block__gesturecomponents__right-div__fingy1">
                     <mat-button-toggle mat-list-icon="fa fa-play"
-                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton">Play</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton"
+                        (click)=" togglePlayState(3)">Play
+                    </mat-button-toggle>
                     <mat-button-toggle
                         class="main-div__bordered-block__gesturecomponents__right-div__savebutton">1Save</mat-button-toggle>
 
                     <!-- Right Div Row 2 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown">
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown"
+                        (x)="log($event, 4)" [index]="4">
                     </app-dropdown>
                     <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
                         class="main-div__bordered-block__gesturecomponents__right-div__fingy1">
                     <mat-button-toggle mat-list-icon="fa fa-play"
-                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton">Play</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton">
+                        (click)=" togglePlayState(4)">Play</mat-button-toggle>
                     <mat-button-toggle
                         class="main-div__bordered-block__gesturecomponents__right-div__savebutton">1Save</mat-button-toggle>
 
                     <!-- Right Div Row 3 -->
-                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown">
+                    <app-dropdown class="main-div__bordered-block__gesturecomponents__right-div__dropdown"
+                        (x)="log($event, 5)" [index]="5">
                     </app-dropdown>
                     <img src="../assets/images/quad_fingy_img.png" alt="quad_fingy_img"
                         class="main-div__bordered-block__gesturecomponents__right-div__fingy1">
                     <mat-button-toggle mat-list-icon="fa fa-play"
-                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton">Play</mat-button-toggle>
+                        class="main-div__bordered-block__gesturecomponents__right-div__playbutton">
+                        (click)=" togglePlayState(5)">Play</mat-button-toggle>
                     <mat-button-toggle
                         class="main-div__bordered-block__gesturecomponents__right-div__savebutton">1Save</mat-button-toggle>
                 </div>

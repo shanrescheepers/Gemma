@@ -1,0 +1,47 @@
+#main {
+    #header {
+        .logo {
+            width: 100vw;
+            border: 1px solid #000;
+        }
+    }
+
+    #content {
+        .active {
+            background-color: #0f0;
+        }
+
+        .header {}
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            alignn-items: stretched;
+
+            .left {
+                flex-grow: 1;
+            }
+
+            .right {
+                width: 20px;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        .lorem {
+            .items {
+                background-color: #f00;
+
+                &.active {
+                    border: 1px solid #fff;
+                }
+
+                &:not(.active) {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    #footer {}
+}

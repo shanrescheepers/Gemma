@@ -7,12 +7,15 @@ import {
 } from '@mediapipe/tasks-vision';
 import { promises } from 'dns';
 import * as Tone from 'tone';
+import { AudioserviceService } from '../audioservice.service';
 
 @Component({
   selector: 'app-gemma-live-studio',
   templateUrl: './gemma-live-studio.component.html',
   styleUrls: ['./gemma-live-studio.component.scss']
 })
+
+
 export class GemmaLiveStudioComponent implements AfterViewInit {
   @ViewChild('webcam') video!: ElementRef;
   @ViewChild('output_canvas') canvasElement!: ElementRef;
@@ -41,6 +44,17 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
   currentGestures;
 
+  audioDict: any = {
+    'string1.mp3': "B2",
+    'string2.mp3': "A2",
+    'string3.mp3': "A3",
+    'string4.mp3': "A4",
+    'beatmachine_drum1.mp3': "D5",
+  }
+
+  constructor(private audioService: AudioserviceService) {
+
+  }
   //<> type def. to return type/ value later after async loaded, promising to fill with value/type
   //js promises
   async ngAfterViewInit(): Promise<void> {
@@ -239,19 +253,19 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
           // all my fingys - 5 minimum, can add more later
           switch (this.gestureResults.gestures[0][0].categoryName) {
             case 'fingy':
-              this.synth.triggerAttack('B2', now);
+              this.synth.triggerAttack(this.audioDict[this.audioService.getSelectedMP3(0)], now);
               break;
             case 'double_fingy':
-              this.synth.triggerAttack('A2', now);
+              this.synth.triggerAttack(this.audioDict[this.audioService.getSelectedMP3(1)], now);
               break;
             case 'trip_fingy':
-              this.synth.triggerAttack('A3', now);
+              this.synth.triggerAttack(this.audioDict[this.audioService.getSelectedMP3(2)], now);
               break;
             case 'quad_fingy':
-              this.synth.triggerAttack('A4', now);
+              this.synth.triggerAttack(this.audioDict[this.audioService.getSelectedMP3(3)], now);
               break;
             case 'heptagonal_fingy':
-              this.synth.triggerAttack('D5', now);
+              this.synth.triggerAttack(this.audioDict[this.audioService.getSelectedMP3(4)], now);
               break;
             default:
               this.synth.triggerRelease(now);
