@@ -50,14 +50,14 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
     this.synth = new Tone.Sampler({
       urls: {
-        B2: 'B2.mp3',
-        A2: 'A2.mp3',
-        A3: 'A3.mp3',
-        A4: 'A4.mp3',
-        D5: 'D5.mp3',
+        B2: 'string1.mp3',  //fingy
+        A2: 'string2.mp3',
+        A3: 'string3.mp3',
+        A4: 'string4.mp3',
+        D5: 'beatmachine_drum1.mp3',
       },
       release: 1,
-      baseUrl: './assets/guitar-acoustic/',
+      baseUrl: './assets/custom/',
     }).toDestination();
 
     Tone.Buffer.loaded().then(() => {
@@ -153,8 +153,6 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       this.video.nativeElement.videoWidth;
     this.canvasElement.nativeElement.height =
       this.video.nativeElement.videoHeight;
-    this.canvasElement.nativeElement.scaleX =
-      this.canvasElement.nativeElement.videoScale;
 
     // Now let's start detecting the stream.
     if (this.runningMode === 'IMAGE') {
