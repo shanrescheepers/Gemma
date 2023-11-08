@@ -1,4 +1,15 @@
 .main-div {
+    .overlay {
+
+
+        background: rgba(30, 24, 36, 0.5);
+
+        backdrop-filter: blur(1px);
+        // background: linear-gradient(to right, #4c2165, #3A2C6A, #1b172a);
+        /* This should be less than the z-index of your element */
+    }
+
+
 
     &__bordered-block {
         display: grid;
@@ -6,17 +17,48 @@
         width: 93%;
         height: 84%;
         border-radius: 25px;
-        background-color: rgba(255, 255, 255, 0.704);
+        background: rgba(16, 6, 27, 0.7);
+        // background: rgba(30, 24, 36, 0.5);
+        backdrop-filter: blur(30px);
+        z-index: 9998;
         position: fixed;
         top: 52%;
         left: 50%;
         transform: translate(-50%, -47%);
         z-index: 9999;
+        box-shadow: 0px 0px 10px rgba(58, 44, 106, 0.1);
+
+        @media (max-width: 1200px) {
+            width: 95%;
+            height: 90%;
+        }
+
+        @media (max-width: 992px) {
+            width: 97%;
+            height: 92%;
+        }
+
+        @media (max-width: 768px) {
+            width: 99%;
+            height: 94%;
+        }
+
+        &__heading {
+            justify-content: center;
+            justify-self: left;
+            margin-top: 2.5%;
+            background: linear-gradient(to right, #00C1FF, #e25c8f, #F4A85A, #F4A85A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Inter", sans-serif;
+            margin-left: 4%;
+        }
 
         &__contents {
             display: grid;
-            grid-template-columns: 30% 70%;
+            grid-template-columns: 20% 70%;
             grid-template-rows: 1fr;
+
 
             &__left {
                 // background-color: aqua;
