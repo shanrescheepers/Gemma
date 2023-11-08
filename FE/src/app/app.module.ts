@@ -10,6 +10,7 @@ import { GestureSoundLibraryComponent } from './gesture-sound-library/gesture-so
 import { GemmaLiveStudioComponent } from './gemma-live-studio/gemma-live-studio.component';
 import { HelpHubComponent } from './help-hub/help-hub.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { MaterialModule } from './material/material/material.module';
 
 
 @NgModule({
@@ -21,14 +22,15 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     GestureSoundLibraryComponent,
     GemmaLiveStudioComponent,
     HelpHubComponent,
-    DropdownComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    MaterialModule,
+    DropdownComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DropdownComponent } from '../components/dropdown/dropdown.component';
-
+import { MaterialModule } from '../material/material/material.module';
 @Component({
   selector: 'app-gesture-sound-library',
   templateUrl: './gesture-sound-library.component.html',

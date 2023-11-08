@@ -1,0 +1,85 @@
+.select-main {
+
+    min-height: 40px;
+    margin-top: 40px;
+    border-style: solid 1px white;
+
+}
+
+::ng-deep .mat-label .rounded-select,
+.mat-select,
+.select {
+    margin-top: -4px;
+    background: transparent !important;
+
+    color: black;
+    border-radius: 28px !important;
+    border-style: solid 1px;
+}
+
+::ng-deep .mat-form-field-outline-start,
+.select {
+
+    border-radius: 40px 0 0 28px !important;
+
+
+    min-width: 28px !important;
+
+    border: 0px transparent !important;
+    height: 40px;
+    color: #F09A37;
+
+}
+
+
+
+::ng-deep .rounded-select .mat-select,
+.select {
+
+    min-width: 28px !important;
+
+    height: 30px !important;
+    color: #F09A37;
+    border-radius: 30px !important;
+    border: 0px transparent !important;
+
+}
+
+.option {
+    color: black;
+}
+
+::ng-deep .mat-form-field-outline-end {
+
+    border-radius: 0 50px 10px 0 !important;
+    min-width: 28px !important;
+    height: 40px;
+    min-height: 0px;
+    border: 0px transparent !important;
+
+    color: #F09A37;
+}
+
+/* Add padding to move the label and input into the center to prevent overlapping the rounded border */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex,
+.select {
+    border-radius: 28px !important;
+    border-color: #F09A37;
+    border-top: #F09A37;
+    background-color: #F09A37;
+    min-width: 28px !important;
+    height: 50px;
+    padding: 0px 20px 10px 14px !important;
+
+
+}
+
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: red !important;
+}
+
+.select {
+    color: black;
+
+}
