@@ -9,6 +9,7 @@ import { Onboarding2Component } from './onboarding2/onboarding2.component';
 import { GestureSoundLibraryComponent } from './gesture-sound-library/gesture-sound-library.component';
 import { GemmaLiveStudioComponent } from './gemma-live-studio/gemma-live-studio.component';
 import { HelpHubComponent } from './help-hub/help-hub.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 
 @NgModule({
@@ -19,7 +20,9 @@ import { HelpHubComponent } from './help-hub/help-hub.component';
     Onboarding2Component,
     GestureSoundLibraryComponent,
     GemmaLiveStudioComponent,
-    HelpHubComponent
+    HelpHubComponent,
+    DropdownComponent,
+
   ],
   imports: [
     BrowserModule,
