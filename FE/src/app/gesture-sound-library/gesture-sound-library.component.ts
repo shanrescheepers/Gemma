@@ -34,17 +34,23 @@ export class GestureSoundLibraryComponent implements OnInit {
 
       // Load and play the selected MP3 using Tone.js
       this.player.load(mp3FilePath).then(() => {
+
         this.player.start();
+        this.playButtonText = 'Play';
       });
     } else {
       this.togglePlayState(index)
+
       this.player.stop();
+      this.playButtonText = 'Stop';
+
     }
   }
   // Toggle the play state and update the button text
   togglePlayState(index: number) {
     if (this.isPlaying) {
       this.player.stop();
+
       this.playButtonText = 'Play';
       console.log(this.isPlaying + this.playButtonText)
 
@@ -54,13 +60,7 @@ export class GestureSoundLibraryComponent implements OnInit {
       console.log(this.playSelectedMP3 + this.playButtonText)
     }
     this.isPlaying = !this.isPlaying;
+
   }
-
-
-
-
-
-
-
 
 }
