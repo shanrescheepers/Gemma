@@ -1,41 +1,42 @@
 .main-div {
-    .overlay {
+    // .overlay {
 
 
-        background: rgba(30, 24, 36, 0.5);
-        margin-top: 172.5px;
-        backdrop-filter: blur(1px);
-        // background: linear-gradient(to right, #4c2165, #3A2C6A, #1b172a);
-        /* This should be less than the z-index of your element */
-    }
-
-
+    //     background: rgba(30, 24, 36, 0.5);
+    //     margin-top: 100.5px;
+    //     backdrop-filter: blur(1px);
+    //     // background: linear-gradient(to right, #4c2165, #3A2C6A, #1b172a);
+    //     /* This should be less than the z-index of your element */
+    // }
+    background: rgba(18, 2, 32, 0.674);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    width: 92%;
+    height: 84%;
+    border-radius: 25px;
+    // padding-left: 200px;
+    margin-left: 60px;
 
     &__bordered-block {
         display: grid;
 
         width: 93%;
         height: 84%;
-        border-radius: 25px;
-        background: rgba(16, 6, 27, 0.7);
         // background: rgba(30, 24, 36, 0.5);
-        backdrop-filter: blur(30px);
-        margin-top: 120px;
-        z-index: 9998;
+        // backdrop-filter: blur(30px);
+        // backdrop
+        margin-top: 150px;
         left: 50%;
-        transform: translate(-50%, -15%);
+        // transform: translate(-50%, -15%);
         position: fixed;
-        display: grid;
-
-
         top: 30.8%;
-
         transform: translate(-50%, -47%);
 
 
 
 
-        box-shadow: 0px 0px 10px rgba(58, 44, 106, 0.1);
 
         @media (max-width: 1200px) {
             width: 95%;
@@ -64,19 +65,19 @@
 
 
         // }
-        &__heading {
+        // &__heading {
 
-            margin-top: 14px;
-            margin-left: 20px;
-
-            background: linear-gradient(to right, #B9AFE5, #B9AFE5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: "Inter", sans-serif;
-
-            word-spacing: 2px;
-            font-size: 14px;
-        }
+        //     margin-top: 1px;
+        //     margin-left: 20px;
+        //     text-align: center;
+        //     background: linear-gradient(to right, #B9AFE5, #B9AFE5);
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        //     font-family: "Inter", sans-serif;
+        //     margin-left: -8px;
+        //     word-spacing: 2px;
+        //     font-size: 20px;
+        // }
 
         &__gesturecomponents {
             display: grid;
@@ -86,16 +87,16 @@
 
 
             &__left-div {
-                margin-top: 10px;
+                margin-top: -100px;
                 display: grid;
-                grid-template-columns: 180px 200px 100px;
+                grid-template-columns: 180px 120px 90px;
 
                 gap: 16px;
                 justify-content: center;
                 justify-self: center;
                 justify-items: start;
                 align-items: center;
-                row-gap: 30px;
+                row-gap: 40px;
 
 
 
@@ -133,7 +134,7 @@
                 &__fingy1 {
                     margin-left: -50px;
                     display: grid;
-                    height: 130px;
+                    height: 100px;
                     justify-content: start;
                     justify-items: center;
                     align-items: start;
@@ -182,7 +183,7 @@
             }
 
             &__right-div {
-                margin-top: 10px;
+                padding-top: 125px;
                 display: grid;
                 grid-template-columns: 180px 200px 100px;
 
@@ -191,7 +192,8 @@
                 justify-self: center;
                 justify-items: start;
                 align-items: center;
-                row-gap: 30px;
+                row-gap: 40px;
+                height: 90px;
 
                 &__dropdown {
                     display: grid;
@@ -205,7 +207,7 @@
                 &__fingy1 {
                     margin-left: -19px;
                     display: grid;
-                    height: 130px;
+                    height: 100px;
                     justify-content: start;
                     justify-items: center;
                     align-items: start;
