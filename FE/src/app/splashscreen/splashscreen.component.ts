@@ -37,7 +37,7 @@ export class SplashComponent implements OnInit {
     // Add more timeouts and elements as needed.
     // After all animations are complete, navigate to the main application page.
     setTimeout(() => {
-      this.router.navigate(['/gesture-controls']);
+      this.router.navigate(['/ob1']);
     }, 8000);
   }
 }
