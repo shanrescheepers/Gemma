@@ -12,6 +12,7 @@
   <p align="center">
 Gesture Enhanced Music Making Ai App.
     <br/>
+     <h4 align="center">Resize Your Screen to 1440 x 900px as this is a laptop app!</h3>
     <br/>
     <br/>
     .
