@@ -1,0 +1,458 @@
+.main {
+    background: rgba(50, 51, 88, 0.57);
+    border-radius: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 92%;
+    height: 84%;
+    margin-left: 5%;
+    display: grid;
+
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 120px 150px 150px 150px;
+
+    &__topcontent {
+        padding: 16px;
+
+        margin-top: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        display: grid;
+        justify-content: center;
+        justify-self: center;
+        background: #1A1B2D;
+        border-radius: 35px;
+        height: 80px;
+        width: 200px;
+    }
+
+    &__firstrowcontent {
+        display: grid;
+        grid-template-columns: 445px 400px 400px;
+        height: 300px;
+        margin-left: 20px;
+
+        // first column left
+        &__col1 {
+            display: grid;
+            grid-template-columns: 200px 100px;
+            gap: 16px;
+
+            // select sound + play pause
+            &__col1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 100px;
+                gap: 8px;
+                height: 300px;
+
+                // select soundapp dropdown
+                &__row1 {
+                    display: grid;
+                    grid-template-columns: 50px;
+                }
+
+                // play pause
+                &__row2 {
+                    display: grid;
+                    grid-template-columns: 100px 80px;
+                    grid-template-rows: 40px;
+                    grid-gap: 8px;
+                    justify-content: center;
+                    align-items: center;
+
+                    &__p {
+                        color: white;
+                        font-size: 12px;
+                        justify-content: right;
+                        align-items: center;
+                        justify-self: end;
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    &__playbutton {
+                        height: 50px;
+                        width: 50px;
+                        justify-items: right;
+                        border-radius: 100px !important;
+                        align-items: center;
+                        justify-self: right;
+                        justify-content: right;
+                        margin-left: -11.7px;
+                    }
+
+
+
+                }
+
+
+            }
+
+            // gesture image
+            &__col2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                height: 300px;
+            }
+        }
+
+        // end of left first column
+        //
+        &__col2 {
+
+            // first border , then image, then border again
+            display: grid;
+            justify-content: center;
+            justify-self: center;
+
+        }
+
+        &__col3 {
+            display: grid;
+            grid-template-columns: 240px 200px;
+
+            &__col1 {
+                grid-template-columns: 200px;
+
+                &__gestureimg {
+                    height: 200px;
+                }
+            }
+
+            // select sound + play pause
+            &__col2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 100px;
+                height: 300px;
+
+                // select soundapp dropdown
+                &__row1 {
+                    display: grid;
+                }
+
+                // play pause
+                &__row2 {
+                    display: grid;
+                    grid-template-columns: 80px 100px;
+                    grid-template-rows: 40px;
+                    grid-gap: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 9px;
+
+                    &__p {
+                        color: white;
+                        font-size: 12px;
+                        justify-content: left;
+                        align-items: center;
+                        justify-self: start;
+                        align-content: center;
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    &__playbutton1 {
+                        height: 50px;
+                        width: 50px;
+                        justify-items: center;
+                        border-radius: 100px !important;
+                        align-items: center !important;
+                        justify-self: left;
+                        align-content: center;
+                        align-self: center;
+                        justify-content: left;
+
+                        &__playbutton2 {
+                            height: 50px;
+                            width: 50px;
+                            justify-items: left;
+                            border-radius: 100px !important;
+                            align-items: center !important;
+                            justify-self: left !important;
+                            align-content: start;
+                            align-self: self-start;
+                            justify-content: left;
+                            margin-left: -11.7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // first row content
+
+    // second row content
+    &__secondrowcontent {
+        padding: 16px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        display: grid;
+        justify-content: center;
+        justify-self: center;
+        background: #1A1B2D;
+        border-radius: 35px;
+        height: 100px;
+        width: 400px;
+        border: 1px solid #F09A37;
+        z-index: 999;
+
+
+        &__p {
+            font-size: 16px;
+            color: rgb(202, 202, 202);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    &__thirdrowcontent {
+        display: grid;
+        grid-template-columns: 350px 470px 470px;
+        height: 300px;
+        margin-left: 20px;
+        justify-content: space-around;
+
+        // first column left
+        // first column left
+        &__col1 {
+            display: grid;
+            grid-template-columns: 200px 100px;
+            gap: 16px;
+            margin-top: -10px;
+            margin-right: -10px;
+
+            // select sound + play pause
+            &__col1 {
+                margin-top: 15px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 100px;
+                gap: 8px;
+                height: 300px;
+
+                // select soundapp dropdown
+                &__row1 {
+                    display: grid;
+                    grid-template-columns: 50px;
+                }
+
+                // play pause
+                &__row2 {
+                    display: grid;
+                    grid-template-columns: 100px 80px;
+                    grid-template-rows: 40px;
+                    grid-gap: 8px;
+                    justify-content: center;
+                    align-items: center;
+
+                    &__p {
+                        color: white;
+                        font-size: 12px;
+                        justify-content: right;
+                        align-items: center;
+                        justify-self: end;
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    &__playbutton {
+                        height: 50px;
+                        width: 50px;
+                        justify-items: right;
+                        border-radius: 100px !important;
+                        align-items: center;
+                        justify-self: right;
+                        justify-content: right;
+                        margin-left: -11.7px;
+                    }
+
+
+
+                }
+
+
+            }
+
+            // gesture image
+            &__col2 {
+                display: grid;
+                grid-template-columns: 1fr;
+
+
+            }
+        }
+
+        // end of left first column
+        //
+        &__col2 {
+
+            display: grid;
+            grid-template-columns: 200px;
+            gap: 16px;
+            justify-content: center;
+            align-content: center;
+            grid-template-rows: 1fr 1fr;
+
+            // select sound + play pause
+            &__col1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px;
+                gap: 8px;
+                height: 200px;
+                margin-top: -30px;
+
+                // select soundapp dropdown
+                &__row1 {
+                    justify-content: center;
+                    grid-template-columns: 100px 100px 100px;
+                    justify-content: center;
+
+                    &__dropdown {
+                        display: grid;
+                        justify-content: center;
+                    }
+
+                    &__row2 {
+                        display: grid;
+                        grid-template-columns: 100px 80px;
+                        grid-template-rows: 40px;
+                        grid-gap: 8px;
+                        justify-content: center;
+                        align-items: center;
+
+                        &__p {
+                            color: white;
+                            font-size: 12px;
+                            justify-content: right;
+                            align-items: center;
+                            justify-self: end;
+                            margin-top: 10px;
+                            font-weight: bold;
+                        }
+
+                        &__playbutton {
+                            height: 50px;
+                            width: 50px;
+                            justify-items: right;
+                            border-radius: 100px !important;
+                            align-items: center;
+                            justify-self: right;
+                            justify-content: right;
+                            margin-left: -11.7px;
+                        }
+
+                    }
+
+                    // play pause
+
+
+
+
+
+
+
+                }
+
+
+            }
+
+            // gesture image
+            &__col2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                height: 300px !important;
+            }
+        }
+
+        &__col3 {
+            display: grid;
+            grid-template-columns: 240px 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+            gap: 8px;
+
+
+            &__col1 {
+                grid-template-columns: 200px;
+
+                &__gestureimg {
+                    height: 200px;
+                }
+            }
+
+            // select sound + play pause
+            &__col2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 100px;
+                height: 300px;
+                gap: 8px;
+                margin-top: 10px;
+
+                // select soundapp dropdown
+                &__row1 {
+                    display: grid;
+                }
+
+                // play pause
+                &__row2 {
+                    display: grid;
+                    grid-template-columns: 80px 100px;
+                    grid-template-rows: 40px;
+                    grid-gap: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 9px;
+
+                    &__p {
+                        color: white;
+                        font-size: 12px;
+                        justify-content: left;
+                        align-items: center;
+                        justify-self: start;
+                        align-content: center;
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    &__playbutton1 {
+                        height: 50px;
+                        width: 50px;
+                        justify-items: center;
+                        border-radius: 100px !important;
+                        align-items: center !important;
+                        justify-self: left;
+                        align-content: center;
+                        align-self: center;
+                        justify-content: left;
+
+                        &__playbutton2 {
+                            height: 50px;
+                            width: 50px;
+                            justify-items: left;
+                            border-radius: 100px !important;
+                            align-items: center !important;
+                            justify-self: left !important;
+                            align-content: start;
+                            align-self: self-start;
+                            justify-content: left;
+                            margin-left: -11.7px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

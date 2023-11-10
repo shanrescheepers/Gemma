@@ -12,6 +12,7 @@ import { HelpHubComponent } from './help-hub/help-hub.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { MaterialModule } from './material/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { GestureControlComponent } from './gesture-control/gesture-control.component';
 // import { ExampleComponent } from './example/example.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     GestureSoundLibraryComponent,
     GemmaLiveStudioComponent,
     HelpHubComponent,
+    GestureControlComponent,
     // ExampleComponent,
 
 

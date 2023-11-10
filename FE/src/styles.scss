@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0;
-    background-image: url('./assets/images/background_image_purple1.png');
+    background-image: url('./assets/images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+    position: fixed;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,178 @@
+<div class="main">
+
+
+    <div class="main__topcontent">
+        <div>
+            <img src="../assets/images/gesture-control.png"
+                style="height: 40px; width: auto; display: grid; justify-content: center; padding: 6px;">
+            <p style="color: rgb(233, 232, 230);">One hand gesture control panel</p>
+        </div>
+    </div>
+
+    <div class="main__firstrowcontent">
+        <!-- first gesture left top -->
+        <div class="main__firstrowcontent__col1">
+            <div class="main__firstrowcontent__col1__col1">
+
+                <div class="main__firstrowcontent__col1__col1__row1">
+                    <!-- index 0 - first finger -->
+                    <app-dropdown (x)="log($event, 0)" [index]="0">
+                    </app-dropdown>
+                </div>
+                <div class="main__firstrowcontent__col1__col1__row2">
+                    <p class="main__firstrowcontent__col1__col1__row2__p">Playback</p>
+                    <mat-button-toggle class="main__firstrowcontent__col1__col1__row2__playbutton"
+                        (click)=" togglePlayState(0)">
+                        <!-- {{playButtonText}} -->
+                        <img class="main__firstrowcontent__col1__col1__row2__playbutton"
+                            src="../../assets/images/playpause.png" alt="Play/Pause Button">
+                    </mat-button-toggle>
+                </div>
+
+            </div>
+
+            <div class="main__firstrowcontent__col1__col2">
+                <img class="main__firstrowcontent__col1__col1__row2__gestureimg"
+                    style="height: 140px; justify-content: center; align-items: center; padding-top: 40px;"
+                    src="../../assets/images/1finger.png">
+            </div>
+        </div>
+
+        <!-- resting col -->
+        <div class="main__firstrowcontent__col2">
+            <img class="main__firstrowcontent__col1__col1__row2__gestureimg"
+                style="height: 100px; justify-content: center; align-items: center; padding-top: 40px;"
+                src="../../assets/images/defaultresting.png">
+        </div>
+
+        <!-- gesture right top -->
+        <div class="main__firstrowcontent__col3">
+            <div class="main__firstrowcontent__col3__col1">
+
+                <img class="main__firstrowcontent__col3__col1__gestureimg"
+                    style="height: 140px; justify-content: center; align-items: center; padding-top: 40px;"
+                    src="../../assets/images/5fingers.png">
+            </div>
+
+            <div class="main__firstrowcontent__col3__col2">
+                <div class="main__firstrowcontent__col3__col2__row1">
+                    <!-- index 0 - five finger -->
+                    <app-dropdown (x)="log($event, 5)" [index]="5">
+                    </app-dropdown>
+                </div>
+
+                <div class="main__firstrowcontent__col3__col2__row2">
+                    <p class="main__firstrowcontent__col3__col2__row2__p">Playback</p>
+                    <mat-button-toggle class="main__firstrowcontent__col3__col2__row2__playbutton1"
+                        (click)=" togglePlayState(5)">
+                        <!-- {{playButtonText}} -->
+                        <img class="main__firstrowcontent__col3__col2__row2__playbutton1__playbutton2"
+                            src="../../assets/images/playpause.png">
+                    </mat-button-toggle>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="main__secondrowcontent">
+        <p class="main__secondrowcontent__p">Select sounds from the preset <br>library & assign it to a gesture</p>
+    </div>
+
+
+
+
+    <!-- 3rd Row -->
+    <div class="main__thirdrowcontent">
+
+        <!-- 3rd Row Col 3 -->
+        <div class="main__thirdrowcontent__col1">
+            <div class="main__thirdrowcontent__col1__col1">
+
+                <div class="main__thirdrowcontent__col1__col1__row1">
+                    <app-dropdown (x)="log($event, 2)" [index]="2">
+                    </app-dropdown>
+                </div>
+                <div class="main__thirdrowcontent__col1__col1__row2">
+                    <p class="main__thirdrowcontent__col1__col1__row2__p">Playback</p>
+                    <mat-button-toggle class="main__thirdrowcontent__col1__col1__row2__playbutton"
+                        (click)=" togglePlayState(2)">
+                        <!-- {{playButtonText}} -->
+                        <img class="main__thirdrowcontent__col1__col1__row2__playbutton"
+                            src="../../assets/images/playpause.png" alt="Play/Pause Button">
+                    </mat-button-toggle>
+                </div>
+
+            </div>
+
+            <div class="main__thirdrowcontent__col1__col2">
+                <img class="main__thirdrowcontent__col1__col2__row2__gestureimg"
+                    style="height: 225px; justify-content: center; align-items: center;  margin-top: -30px;"
+                    src="../../assets/images/2fingers.png">
+            </div>
+        </div>
+
+        <!-- 3rd Row Col 2 -->
+        <div class="main__thirdrowcontent__col2">
+            <div class="main__thirdrowcontent__col2__col1">
+                <div class="main__thirdrowcontent__col2__col1__row1">
+                    <img class="main__thirdrowcontent__col2__col2__row2__gestureimg"
+                        style="height: 170px;justify-content: center; align-items: center; margin-left: 90px; margin-top: -30px;"
+                        src="../../assets/images/3fingers.png">
+                </div>
+                <div class="main__thirdrowcontent__col2__col1__row1">
+                    <div class="main__thirdrowcontent__col2__col1__row1__dropdown">
+                        <app-dropdown (x)="log($event, 3)" [index]="3">
+                        </app-dropdown>
+                    </div>
+
+                    <div class="main__thirdrowcontent__col2__col1__row1__row2">
+                        <p class="main__thirdrowcontent__col2__col1__row1__row2__p">Playback</p>
+                        <mat-button-toggle class="main__thirdrowcontent__col2__col1__row1__row2__playbutton"
+                            (click)=" togglePlayState(3)">
+                            <!-- {{playButtonText}} -->
+                            <img class="main__thirdrowcontent__col2__col1__row1__row2__playbutton"
+                                src="../../assets/images/playpause.png" alt="Play/Pause Button">
+                        </mat-button-toggle>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- 3rd Row Col 3 -->
+        <div class="main__thirdrowcontent__col3">
+            <div class="main__thirdrowcontent__col3__col1">
+
+                <img class="main__thirdrowcontent__col3__col1__gestureimg"
+                    style="height: 225px; justify-content: center; align-items: center;   margin-top: -40px; margin-left: -10px;"
+                    src="../../assets/images/4fingers.png">
+            </div>
+
+            <div class="main__thirdrowcontent__col3__col2">
+                <div class="main__thirdrowcontent__col3__col2__row1">
+                    <app-dropdown (x)="log($event, 4)" [index]="4">
+                    </app-dropdown>
+                </div>
+
+                <div class="main__thirdrowcontent__col3__col2__row2">
+                    <p class="main__thirdrowcontent__col3__col2__row2__p">Playback</p>
+                    <mat-button-toggle class="main__thirdrowcontent__col3__col2__row2__playbutton1"
+                        (click)=" togglePlayState(4)">
+                        <!-- {{playButtonText}} -->
+                        <img class="main__thirdrowcontent__col3__col2__row2__playbutton1__playbutton2"
+                            src="../../assets/images/playpause.png">
+                    </mat-button-toggle>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

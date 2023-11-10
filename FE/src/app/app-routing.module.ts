@@ -6,6 +6,7 @@ import { Onboarding2Component } from './onboarding2/onboarding2.component';
 import { HelpHubComponent } from './help-hub/help-hub.component';
 import { GestureSoundLibraryComponent } from './gesture-sound-library/gesture-sound-library.component';
 import { GemmaLiveStudioComponent } from './gemma-live-studio/gemma-live-studio.component';
+import { GestureControlComponent } from './gesture-control/gesture-control.component';
 
 // const routes: Routes = [];
 const routes: Routes = [
@@ -13,9 +14,10 @@ const routes: Routes = [
   { path: 'splash', component: SplashComponent },
   { path: 'ob1', component: Onboarding1Component },
   { path: 'ob2', component: Onboarding2Component },
-  { path: 'sound-gesture', component: GestureSoundLibraryComponent },
+  // { path: 'sound-gesture', component: GestureSoundLibraryComponent },
   { path: 'liveplay', component: GemmaLiveStudioComponent },
   { path: 'helphub', component: HelpHubComponent },
+  { path: 'gesture-controls', component: GestureControlComponent },
 ];
 
 @NgModule({
