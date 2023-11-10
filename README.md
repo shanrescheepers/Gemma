@@ -31,11 +31,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![Github code size in bytes](https://img.shields.io/github/languages/code-size/shanrescheepers/Gemma)
 ![Github repo stars](https://img.shields.io/github/stars/shanrescheepers/Gemma?style=social)
 ![Github forks](https://img.shields.io/github/forks/shanrescheepers/Gemma?style=social)
-![Github project website](https://img.shields.io/website?down_color=grey&down_message=offline&logo=ufc&logoColor=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fufcfightsite.co.za%2F)
+<!-- ![Github project website](https://img.shields.io/website?down_color=grey&down_message=offline&logo=Gemma&logoColor=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fufcfightsite.co.za%2F) -->
 ![Github last commit](https://img.shields.io/github/last-commit/shanrescheepers/Gemma?logo=Gemma&logoColor=purple)
 ![Github top language](https://img.shields.io/github/languages/top/shanrescheepers/Gemma)
 ![Github languages](https://img.shields.io/github/languages/shanrescheepers/Gemma)
-
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://github.com/shanrescheepers)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADYNr60BoSEstmfyZ2X8cYQI5a-UYPtKXlQ&keywords=shanr%C3%A9%20scheepers&origin=RICH_QUERY_SUGGESTION&position=0&searchId=818f99a5-32df-4b1c-877c-d57d001870c2&sid=RnL&spellCorrectionEnabled=false)
+![Saas](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
 ![Downloads](https://img.shields.io/github/downloads/shanrecheepers/Gemma/total) ![Contributors](https://img.shields.io/github/contributors/shanrescheepers/Gemma?color=dark-green) ![Issues](https://img.shields.io/github/issues/shanrescheepers/Gemma/) 
 
 ## Table Of Contents
