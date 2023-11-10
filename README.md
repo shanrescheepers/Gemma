@@ -38,7 +38,7 @@ Gesture Enhanced Music Making Ai
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
-![Downloads](https://img.shields.io/github/downloads/shanrecheepers/Gemma/total) ![Contributors](https://img.shields.io/github/contributors/shanrescheepers/Gemma?color=dark-green) ![Issues](https://img.shields.io/github/issues/shanrescheepers/Gemma/) 
+![Downloads](https://img.shields.io/github/downloads/shanrecheepers/Gemma/total) ![Contributors](https://img.shields.io/github/contributors/shanrescheepers/Gemma?color=dark-green) 
 
 ## Table Of Contents
 
