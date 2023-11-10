@@ -197,7 +197,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       0,
       this.canvasElement.nativeElement.width,
       this.canvasElement.nativeElement.height,
-      // this.canvasElement.nativeElement.videoHeight(-1, 1)
+
     );
 
     // Landmarks and keyoints
@@ -208,13 +208,13 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
 
           GestureRecognizer.HAND_CONNECTIONS,
           {
-            color: '#BE3F71',
+            color: '#0D5483',
             lineWidth: 2,
 
           }
         );
         this.drawingUtils.drawLandmarks(landmarks, {
-          color: '#F06096',
+          color: '#592083',
           lineWidth: 1,
         });
       }
@@ -226,7 +226,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
       const categoryScore = parseFloat(
         (this.gestureResults.gestures[0][0].score * 100).toString()
       ).toFixed(2);
-      const handedness = this.gestureResults.handednesses[0][0].displayName;
+      const handedness = this.gestureResults.handednesses[0][0].displayName === 'Left' ? 'Right' : 'Left';
 
       this.gestureOutput.nativeElement.style.display = 'inline-block';
       this.gestureOutput.nativeElement.style.width = this.videoWidth;
