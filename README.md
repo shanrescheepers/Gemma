@@ -1,6 +1,5 @@
-# Gemma
+# Gemma -Gesture Enhance Music Making/Mixing Ai
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 <br/>
 <p align="center">
@@ -8,20 +7,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">ReadME Generator</h3>
+  <h3 align="center">Gemma</h3>
 
   <p align="center">
-    An Awesome ReadME Generator To Jumpstart Your Projects!
+Gesture Enhanced Music Making Ai
     <br/>
     <br/>
-    <a href="https://github.com/ShaanCoding/ReadME-Generator"><strong>Explore the docs »</strong></a>
     <br/>
-    <br/>
-    <a href="https://github.com/ShaanCoding/ReadME-Generator">View Demo</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Report Bug</a>
+    <a href="https://github.com/shanrescheepers/Gemma/issues">Report Bug/ Request Feature</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Request Feature</a>
+
   </p>
 </p>
 
@@ -34,7 +30,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <!-- ![Github project website](https://img.shields.io/website?down_color=grey&down_message=offline&logo=Gemma&logoColor=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fufcfightsite.co.za%2F) -->
 ![Github last commit](https://img.shields.io/github/last-commit/shanrescheepers/Gemma?logo=Gemma&logoColor=purple)
 ![Github top language](https://img.shields.io/github/languages/top/shanrescheepers/Gemma)
-![Github languages](https://img.shields.io/github/languages/shanrescheepers/Gemma)
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://github.com/shanrescheepers)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADYNr60BoSEstmfyZ2X8cYQI5a-UYPtKXlQ&keywords=shanr%C3%A9%20scheepers&origin=RICH_QUERY_SUGGESTION&position=0&searchId=818f99a5-32df-4b1c-877c-d57d001870c2&sid=RnL&spellCorrectionEnabled=false)
 ![Saas](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
