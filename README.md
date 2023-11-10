@@ -3,9 +3,9 @@
 
 <br/>
 <p align="center">
-  <a href="https://github.com/ShaanCoding/ReadME-Generator">
+ 
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  
 
   <h3 align="center">Gemma</h3>
 
@@ -93,7 +93,7 @@ Enhanced Performances. Inclusivity (disabilities). Spontaneity. Innovation. Educ
 
 The project was generated with Angular CLI version 13.3.0 and leverages the power of MediaPipe Handpose which is a lightweight ML pipeline consisting of two models: A palm detector and a hand-skeleton finger tracking model, returning coordinates of landmarks and connectors; keypoints.
 MediaPipe Handpose consists of ~12MB of weights, and is well-suited for real time inference across a variety of devices (40 FPS on a 2018 MacBook Pro, 35 FPS on an iPhone11, 6 FPS on a Pixel3)
-
+[Link to Google Colab](https://colab.research.google.com/drive/1opRTOVINyPXo7Aw0GlCNTOhwWUF6zEeQ?usp=sharing)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.

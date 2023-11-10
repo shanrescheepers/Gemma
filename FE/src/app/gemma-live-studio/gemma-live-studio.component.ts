@@ -118,7 +118,7 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     );
     this.gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
       baseOptions: {
-        modelAssetPath: `./assets/gestures_model.task`,
+        modelAssetPath: `./assets/gesture_recognizer.task`,
         delegate: 'GPU',
       },
       runningMode: this.runningMode,
