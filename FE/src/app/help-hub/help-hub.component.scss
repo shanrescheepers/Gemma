@@ -1,16 +1,29 @@
 .main-div {
+    background: rgba(50, 51, 88, 0.57);
+    border-radius: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 92%;
+    height: 84%;
+    margin-left: 5%;
+    display: grid;
 
-    &__bordered-block {
-        display: grid;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 120px 150px 150px 150px;
 
-        width: 93%;
-        height: 84%;
-        border-radius: 25px;
-        background-color: rgba(75, 65, 106, 0.5);
-        position: fixed;
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%, -47%);
-        z-index: 9999;
-    }
+    // &__bordered-block {
+    //     display: grid;
+
+    //     width: 93%;
+    //     height: 84%;
+    //     border-radius: 25px;
+    //     background-color: rgba(75, 65, 106, 0.5);
+    //     position: fixed;
+    //     top: 52%;
+    //     left: 50%;
+    //     transform: translate(-50%, -47%);
+    //     z-index: 9999;
+    // }
 }

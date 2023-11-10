@@ -1,25 +1,32 @@
 <div class="main-div">
-    <div class="main-div__bordered-block overlay">
-        <div class="main-div__bordered-block__top">
 
-            <button id="webcamButton" #webcamButton class="main-div__bordered-block__top__button">
+    <div class="main-div__topcontent">
+        <div class="main-div__topcontent__camera">
+            <button id="webcamButton" #webcamButton class="main-div__topcontent__button">
                 <span (click)="enableCam($event)" class="main-div__bordered-block__top__button__text">ENABLE
                     WEBCAM</span>
             </button>
-
-
-            <h1 class="main-div__bordered-block__top__heading">Turn up the volume & have fun making your music</h1>
-
         </div>
 
-        <div class="main-div__bordered-block__mid">
+        <div class="main-div__topcontent__block">
+            <img src="../assets/images/liveplay.png"
+                style="height: 40px; width: auto; display: grid; justify-content: center;padding-top: 9px;align-content: center; align-self: center;">
+            <p style="color: rgb(233, 232, 230);margin-top: 8px;padding-left: 6px;">Enable your camera <br>& have fun
+                with
+                your gestures!
+            </p>
+        </div>
+
+        <div class="main-div__topcontent__gestureoutput">
             <div class="main-div__bordered-block__mid__gesture-output">
                 <p id="gesture_output" #gestureOutput class="main-div__bordered-block__mid__gesture-output__output">
                 </p>
-                <!-- <p>hi</p>
-                <p>hi</p> -->
             </div>
         </div>
+    </div>
+
+    <div class="main-div__bordered-block">
+
 
 
         <div class="main-div__bordered-block__webcam">
@@ -35,8 +42,7 @@
                         style="border-radius: 25px;" [class.flipped-video]="webcamRunning">
                     </video>
 
-                    <canvas class="output_canvas" id="output_canvas" #output_canvas
-                        style="position: absolute;margin-left: 100;">
+                    <canvas class="output_canvas" id="output_canvas" #output_canvas style="position: absolute;">
                     </canvas>
                 </div>
 
