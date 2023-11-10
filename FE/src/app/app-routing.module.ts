@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'ob2', component: Onboarding2Component },
   // { path: 'sound-gesture', component: GestureSoundLibraryComponent },
   { path: 'liveplay', component: GemmaLiveStudioComponent },
-  { path: 'helphub', component: HelpHubComponent },
+  { path: 'info', component: HelpHubComponent },
   { path: 'gesture-controls', component: GestureControlComponent },
 ];
 
