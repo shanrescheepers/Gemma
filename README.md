@@ -25,11 +25,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/ShaanCoding/ReadME-Generator/total) ![Contributors](https://img.shields.io/github/contributors/ShaanCoding/ReadME-Generator?color=dark-green) ![Issues](https://img.shields.io/github/issues/ShaanCoding/ReadME-Generator) ![License](https://img.shields.io/github/license/ShaanCoding/ReadME-Generator) 
+![Github repo size](https://img.shields.io/github/repo-size/shanrescheepers/Gemma)
+![Github watchers](https://img.shields.io/github/watchers/shanrescheepers/Gemma?style=social)
+![Github language count](https://img.shields.io/github/languages/count/shanrescheepers/Gemma)
+![Github code size in bytes](https://img.shields.io/github/languages/code-size/shanrescheepers/Gemma)
+![Github repo stars](https://img.shields.io/github/stars/shanrescheepers/Gemma?style=social)
+![Github forks](https://img.shields.io/github/forks/shanrescheepers/Gemma?style=social)
+![Github project website](https://img.shields.io/website?down_color=grey&down_message=offline&logo=ufc&logoColor=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fufcfightsite.co.za%2F)
+![Github last commit](https://img.shields.io/github/last-commit/shanrescheepers/Gemma?logo=Gemma&logoColor=purple)
+![Github top language](https://img.shields.io/github/languages/top/shanrescheepers/Gemma)
+![Github languages](https://img.shields.io/github/languages/shanrescheepers/Gemma)
+
+![Downloads](https://img.shields.io/github/downloads/shanrecheepers/Gemma/total) ![Contributors](https://img.shields.io/github/contributors/shanrescheepers/Gemma?color=dark-green) ![Issues](https://img.shields.io/github/issues/shanrescheepers/Gemma/) 
 
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
+* [Gemma Inception](#gemma-inception)
+* [Benefits of Gemma](#benefits-of-gemma)
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -37,38 +50,61 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
-* [License](#license)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](/FE/src/assets/images/ss1.png)
+![Screen Shot](/FE/src/assets/images/ss2.png)
+![Screen Shot](/FE/src/assets/images/ss3.png)
+![Screen Shot](/FE/src/assets/images/ss4.png)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
-Here's why:
+## Gemma Inception
+Music is a completely powerful art form. You can’t touch it, you can’t see it, goes straight into your heart or flies right by it if it’s not your jam. 
+BUT EVERYONE DOES VISUALISE MUSIC IN A WAY IN THEIR MIND WHEN THEY HEAR A CERTAIN SONG.
+This app bridges the gap between electronic music and visualisation by using human hand movement.
+By moving my hand from one gesture to another, I can control certain fillers to be introduced to the song I am currently playing. (any sound from the presets).
+This app is trained to differentiate between different gestures:
+* 1 finger point
+* victory sign
+* OK sign
+* 4 finger point
+* open hand
+*resting fist - default rest gesture.
+This app allows mapping of preset sounds to any of the 5 gestures for sound control.
+The fist was incorporated to allow users to rest between hands, or when they need to pick up a real instrument to continue their live play performance.
 
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+## Benefits of Gemma
+My project aims to address the problems of creative music generation during live performances & collaboration between people from various musical backgrounds, inclusive of those not from a musical background.
+Giving people less musically inclined the chance to be a part of music generation with others that are musically inclined, developing an AI-powered music filler generator based on object detection using hand gestures. 
+Users often struggle to seamlessly incorporate music transitions and fillers into their performances, leading to a disjointed experience. My solution leverages real-time object detection through hand gestures to intuitively trigger music fillers, enhancing the overall performance and the song.
+You can create your own very  personal and intuitive way of performing your music, (and everyone does it in a different way). It is much more intuitive than pushing buttons on your screen in front of listeners. Without an expensive 3 or more piece band, session players or so, there’s a limited amount of ways to bring music alive on stage, or in an intimate home concert.
+Musicians like myself, who are involved in live music performances and seek to improve the creative music generation and transition process, will also benefit from the app.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+### Positive changes in social & accessibility domain
+Enhanced Performances. Inclusivity (disabilities). Spontaneity. Innovation. Education(interactive music generation).
 
 ## Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The project was generated with Angular CLI version 13.3.0 and leverages the power of MediaPipe Handpose which is a lightweight ML pipeline consisting of two models: A palm detector and a hand-skeleton finger tracking model, returning coordinates of landmarks and connectors; keypoints.
+MediaPipe Handpose consists of ~12MB of weights, and is well-suited for real time inference across a variety of devices (40 FPS on a 2018 MacBook Pro, 35 FPS on an iPhone11, 6 FPS on a Pixel3)
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Things you need to use the software and how to install them.
+You can search the documentation for more information.
+
+* Installing Angular CLI
+
+```sh
+npm install -g @angular/cli
 
 * npm
 
@@ -78,12 +114,12 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. This App was made using Angular
 
 2. Clone the repo
 
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/shanrescheepers/Gemma.git
 ```
 
 3. Install NPM packages
@@ -91,16 +127,15 @@ git clone https://github.com/your_username_/Project-Name.git
 ```sh
 npm install
 ```
+4. Serve the app
 
-4. Enter your API in `config.js`
-
-```JS
-const API_KEY = 'ENTER YOUR API';
+```sh
+ng s
 ```
 
 ## Usage
-<img src="/FE/src/assets/images/readme_howtouse1.png" alt="Logo" width="80" height="80">
-<img src="/FE/src/assets/images/readme_howtouse2.png" alt="Logo" width="80" height="80">
+<img src="/FE/src/assets/images/readme_howtouse1.png" alt="Logo" width="500" height="250">
+<img src="/FE/src/assets/images/readme_howtouse2.png" alt="Logo" width="500" height="250">
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
