@@ -50,6 +50,14 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     'string3.mp3': "A3",
     'string4.mp3': "A4",
     'beatmachine_drum1.mp3': "D5",
+    "glass_gliss_D.mp3": "D2",
+    "glass_gliss_G.mp3": "D3",
+    "glass_gliss_S.mp3": "D4",
+    "Warm_Arp_1.mp3": "D6",
+    "Warm_Arp_2.mp3": "D7",
+    "Warm_Arp_3.mp3": "D8",
+    "Warm_Arp_4.mp3": "D9",
+    "Warm_Arp_5.mp3": "D10"
   }
 
   constructor(private audioService: AudioserviceService) {
@@ -69,6 +77,15 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
         A3: 'string3.mp3',
         A4: 'string4.mp3',
         D5: 'beatmachine_drum1.mp3',
+
+        D2: 'glass_gliss_D.mp3',
+        D3: 'glass_gliss_G.mp3',
+        D4: 'glass_gliss_S.mp3',
+        D6: 'Warm_Arp_1.mp3',
+        D8: 'Warm_Arp_2.mp3',
+        D9: 'Warm_Arp_3.mp3',
+        D10: 'Warm_Arp_4.mp3',
+        D11: 'Warm_Arp_5.mp3'
       },
       release: 1,
       baseUrl: './assets/custom/',
