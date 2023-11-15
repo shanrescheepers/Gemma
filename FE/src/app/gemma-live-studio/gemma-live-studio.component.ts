@@ -57,7 +57,12 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
     "Warm_Arp_2.mp3": "D7",
     "Warm_Arp_3.mp3": "D8",
     "Warm_Arp_4.mp3": "D9",
-    "Warm_Arp_5.mp3": "D10"
+    "Warm_Arp_5.mp3": "D10",
+    "French_Horn_W.mp3": "D12",
+    "French_Horn_Y.mp3": "D13",
+    "French_Horn_T.mp3": "D14",
+    "French_Horn_U.mp3": "D15",
+    "French_Horn_O.mp3": "D16"
   }
 
   constructor(private audioService: AudioserviceService) {
@@ -85,7 +90,12 @@ export class GemmaLiveStudioComponent implements AfterViewInit {
         D8: 'Warm_Arp_2.mp3',
         D9: 'Warm_Arp_3.mp3',
         D10: 'Warm_Arp_4.mp3',
-        D11: 'Warm_Arp_5.mp3'
+        D11: 'Warm_Arp_5.mp3',
+        D12: 'French_Horn_W.mp3',
+        D13: 'French_Horn_Y.mp3',
+        D14: 'French_Horn_T.mp3',
+        D15: 'French_Horn_U.mp3',
+        D16: 'French_Horn_O.mp3'
       },
       release: 1,
       baseUrl: './assets/custom/',
