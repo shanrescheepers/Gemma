@@ -64,7 +64,11 @@
             width: 200px;
         }
 
-        &__gestureoutput {}
+        &__gestureoutput {
+            margin-top: 20px;
+            margin-left: -10px;
+            color: #bebebe;
+        }
     }
 
     &__bordered-block {
